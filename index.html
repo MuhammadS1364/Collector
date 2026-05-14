@@ -154,13 +154,32 @@
 
                         <div class="grid grid-cols-2 gap-6">
                             <!-- Organizer -->
-                            <div>
-                                <label class="block text-sm text-zinc-400 mb-2">Organizer</label>
+                            <!-- <div>
+                                <label class="block text-sm text-zinc-400 mb-2">Category</label>
                                 <input type="text" id="Organizer" 
                                        class="form-input w-full bg-zinc-800 border border-zinc-700 focus:border-yellow-400 rounded-2xl px-5 py-4 outline-none text-white"
                                        placeholder="Computer Science Dept" required>
                             </div>
-                            
+                             -->
+                            <!-- Category -->
+                            <div>
+                                <label class="block text-sm text-zinc-400 mb-2">Organizer</label>
+                                <select id="Category" 
+                                        class="form-input w-full bg-zinc-800 border border-zinc-700 focus:border-yellow-400 rounded-2xl px-5 py-4 outline-none text-white"
+                                        required>
+                                    <option value="">Select Organizer</option>
+                                    <option value="Arabic Wing">Arabic Wing</option>
+                                    <option value="English wing">English wing</option>
+                                    <option value="Urdu Wing">Urdu Wing</option>
+                                    <option value="IEH-Wing">IEH-Wing</option>
+                                    <option value="Campus-Care">Campus-Care</option>
+                                    <option value="Tech Wing">Tech Wing</option>
+                                    <option value="Arabic Debate">Arabic Debate</option>
+                                    <option value="English Debate">English Debate</option>
+                                    <option value="Urdu Debate">Urdu Debate</option>
+                                    <option value="CHS-Anjuman">CHS-Anjuman</option>
+                                </select>
+                            </div>
                             <!-- Category -->
                             <div>
                                 <label class="block text-sm text-zinc-400 mb-2">Category</label>
@@ -168,15 +187,13 @@
                                         class="form-input w-full bg-zinc-800 border border-zinc-700 focus:border-yellow-400 rounded-2xl px-5 py-4 outline-none text-white"
                                         required>
                                     <option value="">Select Category</option>
-                                    <option value="Arabic Wing">Arabic Wing</option>
-                                    <option value="English wing">English wing</option>
-                                    <option value="Urdun Wing">Urdun Wing</option>
-                                    <option value="IEH-Wing">IEH-Wing</option>
-                                    <option value="Campus-Care">Campus-Care</option>
-                                    <option value="Tech Wing">Tech Wing</option>
-                                    <option value="Arabic Debate">Arabic Debate</option>
-                                    <option value="English Debate">English Debate</option>
-                                    <option value="Urdu Debate">Urdu Debate</option>
+                                    <option value="Special(U1)">Special(U1)</option>
+                                    <option value="Bidaya">Bidaya(2-3)</option>
+                                    <option value="Thaniya">Thaniya(4-5)</option>
+                                    <option value="Secondary">Secondary(1-5)</option>
+                                    <option value="SeniorSecondary">SeniorSecondary(6-7)</option>
+                                    <option value="General">General(1-7)</option>
+                                    
                                 </select>
                             </div>
                         </div>
@@ -193,7 +210,7 @@
                             <!-- Start Time -->
                             <div>
                                 <label class="block text-sm text-zinc-400 mb-2">Start At</label>
-                                <input type="datetime-local" id="Start_At" 
+                                <input type="date" id="Start_At" 
                                        class="form-input w-full bg-zinc-800 border border-zinc-700 focus:border-yellow-400 rounded-2xl px-5 py-4 outline-none text-white"
                                        required>
                             </div>
@@ -201,7 +218,7 @@
                             <!-- End Time -->
                             <div>
                                 <label class="block text-sm text-zinc-400 mb-2">End At</label>
-                                <input type="datetime-local" id="End_At" 
+                                <input type="date" id="End_At" 
                                        class="form-input w-full bg-zinc-800 border border-zinc-700 focus:border-yellow-400 rounded-2xl px-5 py-4 outline-none text-white"
                                        required>
                             </div>
